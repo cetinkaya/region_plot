@@ -90,7 +90,7 @@ def fill_rects(xminmax, yminmax, rects,
     pl.ylim(ymin, ymax)
 
 
-def region_plot(pred, xminmax, yminmax, discovery=0.1, nof_divisions = 5000,
+def region_plot(pred, xminmax, yminmax, discovery=0.1, nof_subdivisions = 5000,
                 show_all=False, out_edgecolor="#000000", out_facecolor="#FFFFFF",
                 *args, **kwargs):
     dic = {}
@@ -102,7 +102,7 @@ def region_plot(pred, xminmax, yminmax, discovery=0.1, nof_divisions = 5000,
     initial_area = xdiff * ydiff
     initial_rect = get_new_rect(tup, xminmax, yminmax, initial_area, discovery)
     rects = [initial_rect]
-    for i in range(nof_divisions):
+    for i in range(nof_subdivisions):
         rect = rects.pop()
         # sort new rects by their scores
         new_rects = divide_rect(tup, rect, discovery)
