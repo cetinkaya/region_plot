@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as pl
-import matplotlib.animation as animation
 import region_plot as rp
 
 def example1():
