@@ -2,7 +2,7 @@
 A function for plotting (two-dimensional) regions of points that satisfy a given predicate.
 
 ## Installation
-Currently, the easist approach for installing `region_plot` is to clone from github and run `pip install` locally. 
+Currently, the easiest approach for installing `region_plot` is to clone from github and run `pip install` locally. 
 
 ~~~sh
 git clone https://github.com/cetinkaya/region_plot.git
@@ -95,6 +95,6 @@ ani = animation.FuncAnimation(fig, animate, frames=200)
 ani.save("example2.mp4")
 ~~~
 
-The saved animation is as follows
+The saved animation is as follows.
 
 ![Example animation](examples/example2.gif)
