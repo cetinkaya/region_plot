@@ -66,7 +66,9 @@ In this case we obtain:
 
 ![Example plot 1](examples/example1.png)
 
-To see the effect of `discovery` parameter consider the following example
+### Effect of `discovery`
+
+To see the effect of `discovery` parameter, consider the following example where the animation shows the evaluated rectangles for `discovery` values `0.01` and `0.1`:
 
 ~~~python
 import numpy as np
